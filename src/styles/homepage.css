@@ -1,3 +1,16 @@
 .homepage {
   display: flex;
 }
+.homepage__Content {
+  padding: 0px 45px;
+}
+.homepage__Title {
+  margin-top: 114px;
+  font-size: 32px;
+  margin-bottom: 77px;
+}
+.homepage__Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
