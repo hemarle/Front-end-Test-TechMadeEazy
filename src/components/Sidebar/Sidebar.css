@@ -1,0 +1,14 @@
+.sidebar {
+  border-right: 1px solid var(--gray);
+  width: 30vw;
+  max-width: 300px;
+  min-height: 100vh;
+}
+
+.sidebar__Title {
+  text-align: center;
+  font-size: 32px;
+}
+.sidebar__Title span {
+  color: var(--blue);
+}
