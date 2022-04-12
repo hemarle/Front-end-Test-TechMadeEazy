@@ -1,0 +1,50 @@
+.card {
+  max-width: 238px;
+  height: 244px;
+  background-color: white;
+  border-radius: 10px;
+}
+.card__Image {
+  width: 228px;
+  height: 139px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card__Love {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  width: 15px;
+  height: 12px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.card__Avatar {
+  margin: -20px 0px 10px 10px;
+  position: relative;
+  z-index: 2;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}
+
+.card__Details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 12px;
+}
+.card__Details h4 {
+  font-size: 12px;
+}
+.card__Details p {
+  font-size: 10px;
+}
+.card__Details a {
+  color: var(--blue);
+  font-weight: 700;
+}
