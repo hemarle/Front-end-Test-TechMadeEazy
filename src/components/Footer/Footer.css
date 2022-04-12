@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--faded-ash);
+}
+.footer img {
+  height: 15px;
+  width: 15px;
+}
+
+.footer__Currency {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+.footer__Currency select {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  min-width: max-content;
+  padding: 0px 50px 0px 10px;
+  background-color: transparent;
+}

@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import image from "../images/image.png";
 import avatar from "../images/author.png";
 import "../styles/homepage.css";
+import Footer from "../components/Footer/Footer";
 
 function homepage({ title }) {
   let mapper = new Array(10).fill("0");
@@ -25,6 +26,7 @@ function homepage({ title }) {
             />
           ))}
         </div>
+        <Footer />
       </div>
     </div>
   );
