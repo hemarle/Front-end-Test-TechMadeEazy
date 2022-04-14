@@ -1,0 +1,16 @@
+.content {
+  min-height: 70vh;
+  margin-bottom: 100px;
+  padding: 0px 45px;
+}
+.content__Title {
+  margin-top: 10vh;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 77px;
+}
+.content__Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

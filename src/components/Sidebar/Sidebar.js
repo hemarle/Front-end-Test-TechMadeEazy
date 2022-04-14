@@ -1,4 +1,8 @@
 import "./Sidebar.css";
+import { Link, NavLink } from "react-router-dom";
+
+import searchIcon from "../../images/search.png";
+import heartIcon from "../../images/heart.png";
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -7,14 +11,18 @@ function Sidebar() {
       </h1>
 
       <div className="sidebar__Links">
-        <div className="sidebar__Link">
-          <img src="" />
-          <p>Home</p>
-        </div>
-        <div className="sidebar__Link">
-          <img src="" />
-          <p>Favorites</p>
-        </div>
+        <NavLink to="/" activeClassName="active">
+          <div className="sidebar__Link">
+            <img src={searchIcon} />
+            <p>Home</p>
+          </div>
+        </NavLink>
+        <NavLink to="/fav" activeClassName="active">
+          <div className="sidebar__Link">
+            <img src={heartIcon} />
+            <p>Favorites</p>
+          </div>
+        </NavLink>
       </div>
     </div>
   );

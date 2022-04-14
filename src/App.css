@@ -1,0 +1,6 @@
+.app {
+  display: flex;
+}
+.app__Sidebar {
+  border-right: 1px solid var(--gray);
+}

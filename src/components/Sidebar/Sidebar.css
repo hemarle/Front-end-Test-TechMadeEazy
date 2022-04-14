@@ -1,15 +1,48 @@
 .sidebar {
-  border-right: 1px solid var(--gray);
   width: 30vw;
   max-width: 300px;
-  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 .sidebar__Title {
-  text-align: center;
+  margin-left: 3vw;
   font-size: 32px;
   padding: 30px 0px 41px;
+  font-weight: 700;
 }
 .sidebar__Title span {
   color: var(--blue);
+}
+
+.sidebar__Link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0px 3vw;
+  border-left: 7px solid transparent;
+}
+
+.sidebar__Link p {
+  width: 40px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.43);
+}
+.sidebar__Link img {
+  margin-right: 30px;
+  height: 12px;
+  width: 12px;
+  padding: 10px;
+}
+
+.sidebar .active p {
+  font-weight: 700;
+  color: var(--black);
+  /* border: 1px solid yellow; */
+}
+.sidebar .active img {
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+.active .sidebar__Link {
+  border-color: var(--blue);
 }

@@ -18,6 +18,10 @@ img {
 a {
   text-decoration: none;
 }
+
+a:visited {
+  color: inherit;
+}
 body {
   background-color: var(--ash);
   margin: 0;
