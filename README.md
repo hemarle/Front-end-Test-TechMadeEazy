@@ -15,7 +15,7 @@ This web app was built with React and Redux.
 
 ## Available Scripts
 
-- Clone the repo using git clone
+- Clone the repo using git clone https://github.com/hemarle/Front-end-Test-TechMadeEazy.git
 - Install dependecies using npm install
 - Start local server with npm start
 - Run optimized build with npm run build
