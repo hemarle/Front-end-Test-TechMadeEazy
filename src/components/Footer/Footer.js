@@ -51,18 +51,17 @@ function Footer() {
           id="currency"
           onChange={(e) => changeCurrency(e, e.currentTarget.flag_url)}
         >
-          {currency?.map(({ divider, id, short, name, flag_url }) => (
-            <>
-              <option
-                value={name}
-                name={flag_url}
-                selected={
-                  currentCurrency?.currencyOption?.name === name && "selected"
-                }
-              >
-                {name}
-              </option>
-            </>
+          {currency?.map(({ id, name, flag_url }) => (
+            <option
+              value={name}
+              name={flag_url}
+              selected={
+                currentCurrency?.currencyOption?.name === name && "selected"
+              }
+              key={id}
+            >
+              {name}
+            </option>
           ))}
         </select>
       </div>
