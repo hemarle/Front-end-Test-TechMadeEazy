@@ -31,3 +31,14 @@
   padding: 0px 50px 0px 10px;
   background-color: transparent;
 }
+@media screen and (max-width: 500px) {
+  .footer {
+    display: grid;
+  }
+  .footer p {
+    margin-left: 3vw;
+  }
+  .footer__Currency {
+    margin-top: 20px;
+  }
+}

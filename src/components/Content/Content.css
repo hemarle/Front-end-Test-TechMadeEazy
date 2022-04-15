@@ -14,3 +14,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 565px) {
+  .content__Title {
+    text-align: center;
+  }
+  .content__Cards {
+    justify-content: center;
+  }
+}

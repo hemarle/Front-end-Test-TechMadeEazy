@@ -3,7 +3,6 @@ import "./Content.css";
 import Card from "../Card/Card";
 
 function Content({ cards, title }) {
-  console.log("cards", cards);
   return (
     <div className="content">
       <h1 className="content__Title">{title}</h1>

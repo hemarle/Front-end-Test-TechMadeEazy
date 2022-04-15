@@ -7,9 +7,6 @@
 
   font-family: "Public Sans", sans-serif;
 }
-.red {
-  background-color: red !important;
-}
 .card__Image {
   width: 228px;
 
@@ -23,6 +20,9 @@
   border-radius: 10px;
 }
 
+.card .active {
+  background-color: white !important;
+}
 .card__Love {
   position: absolute;
   top: 15px;
@@ -30,7 +30,7 @@
   width: 15px;
   height: 12px;
   padding: 10px;
-  background-color: white;
+  background-color: var(--deep-ash);
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -72,4 +72,10 @@
   color: var(--blue);
   font-weight: 700;
   font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    margin-inline: 5px;
+  }
 }

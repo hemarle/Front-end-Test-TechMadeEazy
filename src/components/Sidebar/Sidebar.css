@@ -37,7 +37,6 @@
 .sidebar .active p {
   font-weight: 700;
   color: var(--black);
-  /* border: 1px solid yellow; */
 }
 .sidebar .active img {
   background-color: var(--blue);
@@ -45,4 +44,48 @@
 }
 .active .sidebar__Link {
   border-color: var(--blue);
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: inherit;
+  }
+  .sidebar__Title {
+    font-size: 1rem;
+    padding-left: 3vw;
+  }
+  .sidebar__Links {
+    display: flex;
+  }
+  .sidebar__Link {
+    margin-bottom: 0;
+    border: 0;
+    padding-bottom: 10px;
+  }
+  .sidebar__Link p {
+    width: max-content;
+    font-size: 0.7rem;
+  }
+  .sidebar__Link img {
+    margin: 3px;
+  }
+  .active .sidebar__Link p {
+    border-bottom: 7px solid var(--blue);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    padding-top: 20px;
+  }
+  .sidebar__Links {
+    display: grid;
+  }
+  .sidebar__Link {
+    margin: 5px;
+  }
 }
