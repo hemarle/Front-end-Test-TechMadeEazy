@@ -1,9 +1,10 @@
+import React, { Suspense } from "react";
 import "./App.css";
-import Homepage from "./views/Homepage";
 import Favourites from "./views/Favourites";
 
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar/Sidebar";
+const Sidebar = React.lazy(() => import("./components/Sidebar/Sidebar"));
+const Homepage = React.lazy(() => import("./views/Homepage"));
 
 function App() {
   return (
@@ -12,8 +13,25 @@ function App() {
         <Sidebar />
       </div>
       <Routes>
-        <Route exact path="/" element={<Homepage />} />
-        <Route exact path="/fav" element={<Favourites />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <Suspense fallback={<Sidebar />}>
+              <Homepage />
+            </Suspense>
+          }
+        />
+
+        <Route
+          exact
+          path="/fav"
+          element={
+            <Suspense fallback={<Sidebar />}>
+              <Favourites />
+            </Suspense>
+          }
+        />
       </Routes>
     </div>
   );

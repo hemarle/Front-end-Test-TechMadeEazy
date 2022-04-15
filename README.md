@@ -4,9 +4,9 @@ This web app was built with React and Redux.
 
 ## Technologies used
 
--React JS
--Redux
--Axios
+- React JS
+- Redux
+- Axios
 
 ## Methodologies Used
 
@@ -22,6 +22,6 @@ This web app was built with React and Redux.
 
 ## Demo
 
-Check out the live demo on []
+Check out the live demo on https://femi-fe-tme.netlify.app/
 
 ## Side-note
