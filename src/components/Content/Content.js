@@ -13,7 +13,9 @@ function Content({ cards, title, fav }) {
           </div>
         ))}
 
-        {fav && cards?.length === 0 && <h1 className=""> No Records yet</h1>}
+        {fav && cards?.length === 0 && (
+          <h1 className=""> No favourite developer yet</h1>
+        )}
       </div>
     </div>
   );
