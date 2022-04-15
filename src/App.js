@@ -12,8 +12,8 @@ function App() {
         <Sidebar />
       </div>
       <Routes>
-        <Route exact path="/five" element={<Homepage />} />
-        <Route path="/fav" element={<Favourites />} />
+        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/fav" element={<Favourites />} />
       </Routes>
     </div>
   );

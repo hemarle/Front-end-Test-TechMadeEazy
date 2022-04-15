@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import Card from "../components/Card/Card";
+import { useSelector } from "react-redux";
 import Content from "../components/Content/Content";
 import Footer from "../components/Footer/Footer";
 function Favourites() {

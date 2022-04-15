@@ -11,7 +11,7 @@ function Sidebar() {
       </h1>
 
       <div className="sidebar__Links">
-        <NavLink to="/five" activeClassName="active">
+        <NavLink to="/" activeClassName="active">
           <div className="sidebar__Link">
             <img src={searchIcon} />
             <p>Home</p>

@@ -23,3 +23,5 @@ This web app was built with React and Redux.
 ## Demo
 
 Check out the live demo on []
+
+## Side-note

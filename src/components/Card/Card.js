@@ -7,22 +7,16 @@ import { actions } from "../../redux/reducer";
 function Card({ card }) {
   const {
     avatar,
-    cust_id,
     display_name,
     starting_from,
     service_photo,
   } = card?.name._source;
-  const { style } = card.style;
   const dispatch = useDispatch();
   const currentCurrency = useSelector((state) => state.currentCurrency);
   // const style = useSelector((state) => state.cards.style);
   const favourites = useSelector((state) => state.favourites);
 
-  const [toggleState, setToggleState] = useState(false);
-  const [testState, setTestState] = useState(0);
-
   function toggle() {
-    setTestState(1);
     const exist = favourites.find(
       (data) => data?.name._source.cust_id === card?.name._source.cust_id
     );
@@ -55,11 +49,12 @@ function Card({ card }) {
         <img src={service_photo} alt={display_name} />
         <img
           src={card?.style ? love : heart}
+          alt=""
           className={`card__Love ${card?.style}`}
           onClick={toggle}
         />{" "}
       </div>
-      <img src={avatar} className="card__Avatar" />
+      <img src={avatar} className="card__Avatar" alt={display_name} />
       <div className="card__Details">
         <div className="card__Author">
           <h4> {display_name}</h4>
