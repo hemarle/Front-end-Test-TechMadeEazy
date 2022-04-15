@@ -8,7 +8,7 @@ function Favourites() {
   useEffect(() => {}, []);
   return (
     <div className="favourites">
-      <Content cards={cards} title="Favorites" />
+      <Content cards={cards} title="Favorites" fav />
 
       <Footer />
     </div>

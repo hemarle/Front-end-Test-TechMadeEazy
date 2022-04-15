@@ -18,7 +18,6 @@ const actions = {
 const reducer = (state, action) => {
   switch (action.type) {
     case actions.ADD_PRODUCTS:
-      console.log("activated");
       return {
         ...state,
         cards: action.payload,

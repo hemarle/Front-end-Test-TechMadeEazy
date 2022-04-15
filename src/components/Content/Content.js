@@ -2,20 +2,18 @@ import React from "react";
 import "./Content.css";
 import Card from "../Card/Card";
 
-function Content({ cards, title }) {
+function Content({ cards, title, fav }) {
   return (
     <div className="content">
       <h1 className="content__Title">{title}</h1>
       <div className="content__Cards">
-        {cards.length ? (
-          cards?.slice(0, 12).map((card, id) => (
-            <div key={id}>
-              <Card card={card} />
-            </div>
-          ))
-        ) : (
-          <h1 className=""> No Records yet</h1>
-        )}
+        {cards?.slice(0, 12).map((card, id) => (
+          <div key={id}>
+            <Card card={card} />
+          </div>
+        ))}
+
+        {fav && cards?.length === 0 && <h1 className=""> No Records yet</h1>}
       </div>
     </div>
   );
